@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentActivity;
 
 import com.beta.fragment.R;
 
-/*静态添加Fragment*/
+/*静态添加Fragment1*/
 public class TActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
