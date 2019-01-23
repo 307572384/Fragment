@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_show_fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示Fragment1" />
+
+        <Button
+            android:id="@+id/btn_show_fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示Fragment2" />
+
+        <Button
+            android:id="@+id/add_frag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加fragment1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/add_frag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加fragment2" />
+
+        <Button
+            android:id="@+id/remove_frag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移除Fragment1" />
+
+        <Button
+            android:id="@+id/remove_frag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移除Fragment2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_repalce_frag1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="replaceFragment1" />
+
+        <Button
+            android:id="@+id/btn_hide_frag1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hideFragment1" />
+
+        <Button
+            android:id="@+id/btn_show_frag1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="showFragment1" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
