@@ -67,7 +67,7 @@ public class BEActivity extends AppCompatActivity{
 			case "fragment2":
 				Toast.makeText(getApplicationContext(), "fragment2点击", Toast.LENGTH_LONG).show();
 				initFragmentSelected(0);//展示fragment1界面
-				break;
+				break;//
 
 			default:
 				break;
