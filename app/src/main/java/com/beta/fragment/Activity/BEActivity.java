@@ -16,7 +16,7 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-//实现Eventbus对Fragment的消息传输
+//实现Eventbus对Fragment的消息传输/
 public class BEActivity extends AppCompatActivity {
 	private FragmentManager mFragmentManager;
 	private BE_Fragment_1   be_fragment1;
