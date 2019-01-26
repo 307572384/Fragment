@@ -1,7 +1,6 @@
 package com.beta.fragment.Activity;
 
 
-
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
@@ -17,11 +16,8 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-/**
- * Created by Kevein on 2019/1/25.12:42
- */
 //实现Eventbus对Fragment的消息传输
-public class BEActivity extends AppCompatActivity{
+public class BEActivity extends AppCompatActivity {
 	private FragmentManager mFragmentManager;
 	private BE_Fragment_1   be_fragment1;
 	private BE_Fragment_2   be_fragment2;
@@ -29,22 +25,21 @@ public class BEActivity extends AppCompatActivity{
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-//使用bundle进行Fragment传输
-		if(savedInstanceState == null)
-		{
+		//使用bundle进行Fragment传输
+		if (savedInstanceState == null) {
 			be_fragment1 = new BE_Fragment_1();
 			be_fragment2 = new BE_Fragment_2();
 
-		}
-		else{//生成一个key以便后续调用
-			be_fragment1 = (BE_Fragment_1)mFragmentManager.getFragment(savedInstanceState,"fragment1");
-			be_fragment2 = (BE_Fragment_2)mFragmentManager.getFragment(savedInstanceState,"fragment2");
+		} else {//生成一个key以便后续调用
+			be_fragment1 = (BE_Fragment_1) mFragmentManager.getFragment(savedInstanceState, "fragment1");
+			be_fragment2 = (BE_Fragment_2) mFragmentManager.getFragment(savedInstanceState, "fragment2");
 
 		}
 		mFragmentManager = getSupportFragmentManager();
 		setContentView(R.layout.be_fragment_main);
 		initFragmentSelected(0);
 	}
+
 	/*注册和取消注册代码*/
 	@Override
 	protected void onResume() {
@@ -57,6 +52,7 @@ public class BEActivity extends AppCompatActivity{
 		super.onDestroy();
 		EventBus.getDefault().unregister(this);
 	}
+
 	@Subscribe(threadMode = ThreadMode.MAIN)
 	public void FragmentButtonClicked(String str) {
 		switch (str) {
@@ -73,11 +69,12 @@ public class BEActivity extends AppCompatActivity{
 				break;
 		}
 	}
-		/**
-		 * 初始化fragment
-		 *
-		 * @param i
-		 */
+
+	/**
+	 * 初始化fragment
+	 *
+	 * @param i
+	 */
 	private void initFragmentSelected(int i) {
 		FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
 		hindFragments(fragmentTransaction);

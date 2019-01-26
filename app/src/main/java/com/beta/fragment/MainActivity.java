@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.beta.fragment.Activity.BEActivity;
 import com.beta.fragment.Activity.CZActivity;
+import com.beta.fragment.Activity.FWXActivity;
 import com.beta.fragment.Activity.TActivity;
 import com.beta.fragment.Activity.TDActivity;
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 	private Button tf_1_low2;
 	private Button tf_low3;
 	private Button tf_low4;
+	private Button tf_low5;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		tf_low3.setOnClickListener(this);
 		tf_low4 = (Button) findViewById(R.id.tf_low4);
 		tf_low4.setOnClickListener(this);
+		tf_low5 = (Button) findViewById(R.id.tf_low5);
+		tf_low5.setOnClickListener(this);
 	}
 
 	@Override
@@ -56,6 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 			case R.id.tf_low4://EventBus实现fragment之间数据通讯
 				Intent low4_intent = new Intent(MainActivity.this, BEActivity.class);
 				startActivity(low4_intent);
+				break;
+			case R.id.tf_low5://仿微信底部Fragment
+				Intent low5_intent = new Intent(MainActivity.this, FWXActivity.class);
+				startActivity(low5_intent);
 				break;
 		}
 	}

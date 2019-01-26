@@ -4,10 +4,10 @@ package com.beta.fragment.bean;
  * Created by Kevein on 2019/1/25.12:25
  */
 
-public class MessageSend  {
+public class MessageSend {
 	private String message;
-	public MessageSend(String message)
-	{
+
+	public MessageSend(String message) {
 		this.message = message;
 
 	}

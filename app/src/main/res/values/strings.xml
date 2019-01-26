@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Fragment</string>
+    <string name="app_name">Fragment学习</string>
+    <string name="weixin">微信</string>
+    <string name="contract">联系人</string>
+    <string name="find">发现</string>
+    <string name="me">我</string>
+    <string name="low_1">静态添加fragment1</string>
+    <string name="low_2">动态添加fragment1</string>
+    <string name="low_3">fragment传值</string>
+    <string name="low_4">EventBus实现数据间通讯</string>
+    <string name="low_5">仿微信底部Fragment</string>
 </resources>

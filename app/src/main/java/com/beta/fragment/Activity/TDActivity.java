@@ -89,8 +89,8 @@ public class TDActivity extends FragmentActivity implements View.OnClickListener
 		transaction.replace(R.id.fragment_container, fragment2);
 		transaction.commit();
 	}
-	private void hideFragment1()
-	{
+
+	private void hideFragment1() {
 
 		FragmentManager manager = getSupportFragmentManager();
 		//创建一个Fragment管理器
@@ -105,8 +105,8 @@ public class TDActivity extends FragmentActivity implements View.OnClickListener
 		transaction.commit();
 		//开始事件
 	}
-	private void showFragment1()
-	{
+
+	private void showFragment1() {
 
 		FragmentManager manager = getSupportFragmentManager();
 		//创建一个Fragment管理器

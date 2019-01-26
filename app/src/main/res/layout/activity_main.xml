@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp"
-        android:text="静态添加fragment1"
+        android:text="@string/low_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,7 +20,7 @@
         android:id="@+id/tf_1_low2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="动态添加fragment1"
+        android:text="@string/low_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="352dp"
-        android:text="fragment传值"
+        android:text="@string/low_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +40,19 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="29dp"
         android:layout_marginStart="14dp"
-        android:text="EventBus实现数据间通讯"
+        android:text="@string/low_4"
         app:layout_constraintBottom_toTopOf="@+id/tf_low3"
         app:layout_constraintStart_toStartOf="@+id/tf_low3" />
+
+    <Button
+        android:id="@+id/tf_low5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="51dp"
+        android:text="@string/low_5"
+        app:layout_constraintBottom_toTopOf="@+id/tf_1_low1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tf_1_low1" />
 </android.support.constraint.ConstraintLayout>

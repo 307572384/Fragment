@@ -20,6 +20,7 @@
         <activity android:name=".Activity.TDActivity"/>
         <activity android:name=".Activity.CZActivity"/>
         <activity android:name=".Activity.BEActivity"/>
+        <activity android:name=".Activity.FWXActivity"/>
     </application>
 
 </manifest>

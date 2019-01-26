@@ -16,11 +16,7 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-/**
- * Created by Kevein on 2019/1/25.12:49
- */
-
-public class BE_Fragment_1 extends Fragment implements View.OnClickListener{
+public class BE_Fragment_1 extends Fragment implements View.OnClickListener {
 
 	private View     view;
 	/**
@@ -54,7 +50,7 @@ public class BE_Fragment_1 extends Fragment implements View.OnClickListener{
 
 	@Subscribe(threadMode = ThreadMode.MAIN)
 	public void Fragment2ButtonClicked(MessageSend msgToSend) {
-		mTv1.setText("点击了1后2给1传递的数据"+msgToSend.getMessage());
+		mTv1.setText("点击了1后2给1传递的数据" + msgToSend.getMessage());
 	}
 
 	@Override
